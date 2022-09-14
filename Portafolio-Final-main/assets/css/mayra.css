@@ -1,0 +1,291 @@
+*{
+    padding:0;
+    margin: 0;
+    font-family: 'montserratregular';
+    box-sizing: border-box;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(12,3,51,0.5),rgba(12,3,51,0.5));
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+
+    .back-video {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+  .content {
+    text-align: center;
+  }
+
+  .content h1{
+    font-family: 'game_of_squidsregular';
+    font-size: 140px;
+    color: white;
+    transition: 0.5s;
+
+  }
+
+  .content h1:hover {
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+
+  }
+
+  .content h3{
+    font-size: 60px;
+    color: white;
+    font-family: 'montserratbold';
+    
+  }
+
+
+.navbar .navbar-nav .nav-link {
+    height: 100%;
+    border-bottom: 2px solid transparent;
+    color:white;
+  }  
+
+
+.navbar .navbar-nav .nav-link:hover {
+    
+    border-bottom: 2px solid  white;
+  }  
+
+  .about {
+    width: 100%;
+    padding: 100px 0px;
+    background-color: rgb(158, 158, 158);
+
+  }
+
+  .about .mainimg img{
+    height: auto;
+    width: 430px;
+
+  }
+
+  .about-text {
+    width: 550px;
+  }
+
+  .maincon{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .about-text h2{
+    color: #3d0b6e;
+    font-family: 'game_of_squidsregular';
+    font-size: 45pt;
+  }
+
+ 
+  .about-text h5{
+    color: rgb(65, 65, 65);
+    font-family: 'montserratbold';
+    padding-bottom: 10px;
+    padding-top: 10px;
+    font-size: 20pt;
+  }
+
+  .about-text p{
+    color: rgb(65, 65, 65);
+    font-size: 14pt;
+  }
+
+  .about-text button{
+    background-color: #3d0b6e;
+    color: white;
+    font-size: 12pt;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-family: 'montserratregular';
+    padding: 13px 20px;
+    border-radius: 30px;
+    transition: .4s;
+  }
+
+  .about-text button:hover {
+    color: #3d0b6e;
+    background-color: transparent;
+    border: 2px solid #3d0b6e ;
+    cursor: pointer;
+  }
+
+  .parallax-cut{
+    background: #000;
+    background: linear-gradient(
+                rgba(0,0,0,0.3),
+                rgba(0,0,0,0.8)   
+    ), url(/assets/img/Purple\ bg.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+  .services .section-header h2 {
+
+    color:white;
+    font-family:'game_of_squidsregular';
+    padding-top: 80px;
+    font-size: 55pt !important;
+  }
+
+  .services .card {
+    background-color: rgb(158, 158, 158) !important;
+  }
+
+  .services .card-title {
+    font-family: 'montserratbold';
+    color: rgb(65, 65, 65);
+  }
+  .services .card-text {
+    font-family: 'montserratregular';
+    color: rgb(65, 65, 65);
+  }
+
+
+ 
+.services .btn {
+    border: 2px solid  #3d0b6e;
+    background-color:  #3d0b6e;
+    color: white !important;
+    font-family: 'montserratbold' !important;
+    border-radius: 30px;
+}
+
+.services .btn:hover {
+    border: 2px solid  #3d0b6e;
+    color:   #3d0b6e !important;
+    background-color: transparent;
+    font-family: 'montserratbold' !important;
+}
+
+  .skills {
+    background-color: rgb(158, 158, 158);
+  }
+
+  .skills .section-header h2 {
+
+    color: #3d0b6e;
+    font-family: 'game_of_squidsregular';
+    padding-top: 100px;
+    font-size: 55pt !important;
+  }
+
+
+  .skills .card {
+    text-align: center;
+    background: linear-gradient(rgba(189,33,245,1),rgba(46,27,206,1));
+    color: white !important;
+    height: 250px;
+    font-size: 90pt;
+    border-radius: 300px !important;
+    transition: 0,05s;
+   
+
+  }
+
+  .skills .card:hover{
+
+    transform: scale(1.1);   
+
+  }
+
+  .skills .card i {
+    display:block;
+    margin-top: auto;
+    margin-bottom: auto;
+    
+
+  }
+
+
+
+
+
+.navbar button{
+    background-color:  #3d0b6e;
+    color: white;
+    font-size: 12pt;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-family: 'montserratregular';
+    padding: 9px 15px;
+    border-radius: 30px;
+    transition: .4s;
+  }
+
+  .navbar button:hover {
+
+    background-color: transparent;
+    border: 2px solid  #3d0b6e;
+    cursor: pointer;
+  }
+
+  /* Responsive Behavior*/
+
+
+  @media only screen and (max-width: 767px){
+
+    .navbar {
+        width: 100%;
+        background-color: rgb(14, 14, 14) ;
+        display:flex;
+    
+    }
+
+    .navbar-nav{
+        text-align: center;
+    }
+
+    .services .card {
+        margin-top: 15px;
+    }
+
+    .skills .card {
+    
+        margin-top: 15px;
+    }
+
+    .about .about-text {
+        padding-left: 20px;
+    }
+
+    .about .about-text h2 {
+        font-size: 25pt;
+    }
+
+  
+
+   
+
+  }
+
+  html, body{
+    scroll-behavior: smooth;
+}
+
+.p-logo {
+    font-family: 'amsterdamtwo_ttf';
+    font-size: 45pt;
+    color: white;
+
+}
