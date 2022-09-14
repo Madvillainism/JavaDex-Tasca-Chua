@@ -1,0 +1,91 @@
+
+.caja {
+  width: 80%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right; 
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-weight: bolder;
+  font-size: 14px; /* White text color */
+}
+
+.html {width: 70%; background-color: green;}
+.css {width: 70%; background-color: blue;} 
+.js {width: 50%; background-color: orangered;} 
+.py {width: 50%; background-color: yellow;}
+
+.dance{
+  color: white;
+  animation: 2s dance infinite alternate-reverse;
+}
+
+@keyframes dance{
+  from{
+    color:blueviolet
+  }
+  30%{
+    color: blue;
+  }
+  60%{
+    color: yellow;
+  }
+  80%{
+    color: black;
+  }
+  to{
+    color: transparent;
+  }
+}
+
+.cajo {
+  border: 3px groove red;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  font-weight: bolder;
+  padding: 16px;
+  margin: 16px 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.cajo:hover{
+  margin: 20px;
+  background-color: grey;
+}
+
+/* Clear floats after containers */
+.cajo::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+.cajo img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+/* Increase the font-size of a span element */
+.cajo span {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* Add media queries for responsiveness. This will center both the text and the image inside the container */
+@media (max-width: 500px) {
+  .cajo {
+    text-align: center;
+  }
+
+  .cajo img {
+    margin: auto;
+    float: none;
+    display: block;
+  }
+}
