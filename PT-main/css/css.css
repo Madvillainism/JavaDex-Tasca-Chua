@@ -1,0 +1,414 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #000000 !important;
+  
+}
+
+
+
+
+.pcero{
+
+padding: 0 !important;
+margin: 0 !important;
+
+
+
+}
+
+@media (min-width: 576px) {
+  .h-sm-100 {
+    height: 100%;
+  }
+}
+
+
+
+.row {
+  display: table;
+}
+
+.row [class*="col-"] {
+  float: none;
+  display: table-cell;
+  vertical-align: top;
+}
+
+
+
+
+
+.texto-encima {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.centrado {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+.fixed-ct {
+  position: sticky;
+  top: 1%;
+
+
+}
+
+
+
+.texto {
+
+  padding: 20px;
+  color: #818181;
+
+}
+
+
+
+
+
+.hovereffect {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out
+}
+
+.hovereffect img {
+  display: block;
+  position: relative;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.hovereffect h1 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translatey(-100px);
+  -ms-transform: translatey(-100px);
+  transform: translatey(-100px);
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  padding: 10px;
+}
+
+
+.hovereffect:hover img {
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+
+.hovereffect:hover h1,
+.hovereffect:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-transform: translatey(0);
+  -webkit-transform: translatey(0);
+  transform: translatey(0);
+}
+
+.hovereffect:hover a.info {
+  -webkit-transition-delay: .2s;
+  transition-delay: .2s;
+}
+
+
+
+
+.fondo1 {
+  background-image: url(../img/fondo1.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgb(20, 20, 20);
+  background-blend-mode: soft-light;
+}
+
+.fondo2 {
+  background-image: url(../img/fondo2.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgb(20, 20, 20);
+  background-blend-mode: soft-light;
+}
+
+.fondo3 {
+  background-image: url(../img/fondo3.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgb(15, 15, 15);
+  background-blend-mode: soft-light;
+}
+
+.fondo4 {
+  background-image: url(../img/fondo4.png);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgb(20, 20, 20);
+  background-blend-mode: soft-light;
+}
+
+
+.centro {
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  text-transform: uppercase;
+}
+
+
+
+
+
+
+.textoc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.textoc2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  text-align: center;
+}
+
+.jander {
+  display: block;
+  width: 100%;
+  padding: var(--bs-dropdown-item-padding-y) var(--bs-dropdown-item-padding-x);
+  clear: both;
+  font-weight: 400;
+  color: var(--bs-dropdown-link-color);
+  text-align: inherit;
+  text-decoration: none;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0
+}
+
+
+
+
+
+
+
+
+.abajo {
+  z-index: 0 !important;
+
+}
+
+
+.banner {
+  background-image: url(../img/baner.gif);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: rgb(50, 50, 50);
+  background-blend-mode: soft-light;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.blanco {
+  color: aliceblue !important;
+}
+
+
+
+a {
+  outline: none;
+  text-decoration: none !important;
+  padding: 2px 1px 0;
+}
+
+a:link {
+  color: green !important;
+}
+
+a:visited {
+  color: green !important;
+}
+
+
+a:active {
+  color: green !important;
+}
+
+
+
+a:focus {
+  border-bottom: 1px solid;
+}
+
+a:hover {
+
+  transition: 0.2s;
+  box-shadow: 5px 5px 5px black;
+  color: rgb(255, 255, 255) !important;
+  text-decoration: underline !important;
+}
+
+
+span:hover {
+
+  transition: 0.2s;
+  box-shadow: 5px 5px 5px black;
+  cursor: pointer;
+  background-color: black;
+  background-blend-mode: soft-light;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.centro {
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  text-transform: uppercase;
+}
+
+
+/* latin-ext */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/4iCv6KVjbNBYlgoCjC3jvmyNL4U.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/4iCv6KVjbNBYlgoCjC3jsGyN.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+
+@font-face {
+  font-family: 'digital-7';
+  src: url(../fonts/digital-7.ttf);
+}
+
+
+
+.fadeTop {
+  opacity: 0; 
+  transform: translate(0, 10vh);
+  transition: all 1s;
+}
+
+.fadeRight {
+  opacity: 0;
+  transform: translate(10vh, 0vh);
+  transition: all 1s;
+}
+
+.fadeLeft {
+  opacity: 0;
+  transform: translate(-10vh, 0vh);
+  transition: all 1s;
+}
+  
+
+.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.visible1 {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+
