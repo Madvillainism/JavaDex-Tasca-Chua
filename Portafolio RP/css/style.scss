@@ -1,0 +1,286 @@
+
+@import '__variables';
+@import '__base';
+
+html *{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background-color: $white;
+}
+
+.Nav{
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	z-index: 1000;
+	width: 100vw;
+	height: $nav-height;
+	box-shadow: $sd-black;
+
+	&__List{
+		display: flex;
+		align-items: center;
+
+		& *{
+			height: 100%;
+		}
+
+	}
+
+	&__Item, &__Link{
+		display: flex;
+		align-items: center;
+	}
+
+	&__Link{
+		color: $drk-grey;
+    font-size: 1.2rem;
+		padding: 0 1rem;
+		cursor: pointer;
+		transition: border .1s, margin .3s, color .3s;
+
+		&:hover{
+			border-bottom: .2rem solid $grey;
+			margin: 0 1rem;
+		}
+
+    &.Active{
+      border-bottom: .2rem solid $red;
+			margin: 0 1rem;
+      color: $red;
+    }
+
+	}
+
+}
+
+.Header{
+  top: $nav-height;
+	height: calc(100vh - $nav-height);
+	background-image: url(/src/img/Portada.jpg);
+	background-size: cover;
+	background-position: top;
+	display: flex;
+  flex-direction: column;
+	justify-content: center;
+  align-items: center;
+
+  &__Line{
+    position: relative;
+    z-index: 100;
+    @include bg-blur-grey;
+    width: 100%;
+    height: 9.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & *{
+      margin: 0 .7rem;
+    }
+
+  }
+
+	&__Title{
+    font-weight: bold;
+		font-size: 5rem;
+    line-height: 4.2rem;
+    color: $white;
+    background: none;
+	}
+
+  &__SubTitle{
+    @include bg-blur-black;
+    margin: .5rem 0;
+    width: 100%;
+    padding: .5rem 10%;
+    padding-left: 50%;
+    font-weight: normal;
+    color: $white;
+  }
+
+	&__Logo{
+    position: relative;
+    top: 3rem;
+    height: 23rem;
+    min-height: 20rem;
+		object-fit: contain;
+    background: none;
+	}
+}
+
+.Section{
+  background-color: $white;
+  margin: $nav-height 0;
+  width: 100%;
+
+  &__Grid{
+    display: grid;
+    padding: 0 5rem;
+
+    &.C2{grid-template-columns: repeat(2,1fr);}
+    &.C3{grid-template-columns: repeat(3,1fr);}
+  }
+
+  &__Box{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__Flex{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+
+  &__Module{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7rem;
+    padding: .5rem;
+    margin: .5rem;
+    width: 45%;
+    box-shadow: $sd-lg-grey;
+    border-radius: .5rem;
+    transition: transform .3s;
+
+    & *{
+      margin: .5rem;
+    }
+
+    &:hover{
+      transform: scale(1.05);
+    }
+
+  }
+
+  .Lg{
+    width: 70%;
+  }
+
+  &__Title{
+    width: fit-content;
+    font-weight: bold;
+    font-size: 4.5rem;
+    padding: .2rem 0;
+    margin: 1.5rem 0;
+  }
+
+  &__SubTitle{
+    @extend .Section__Title;
+    font-size: 3rem;
+  }
+
+  &__Img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: .5rem;
+    box-shadow: $sd-black;
+  }
+
+}
+
+.Module{
+
+  &__Icon{
+   width: 40%;
+  }
+
+  &__Text{
+    font-size: 2rem;
+  }
+
+  &__Img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+}
+
+.Form{
+
+  &__Text{
+    margin: .5rem 0 .2rem;
+  }
+
+  &__Text{
+    font-size: 1.5rem;
+    margin: 1rem 0 0;
+      }
+
+  &__Input{
+    font-size: 1.4rem;
+    border: none;
+    border-bottom: .2rem solid $red;
+    width: 80%;
+    padding: .5rem;
+    // padding: .3rem;
+
+    &:hover,&:focus{
+      outline: none;
+    }
+  }
+
+  &__Button{
+    cursor: pointer;
+    padding: .5rem 3rem;
+    border-radius: .5rem;
+    margin: 1rem;
+    font-size: 1.5rem;
+    border: none;
+    background-color: $red;
+    color: $white;
+    transition: transform .3s;
+
+    &:hover{
+      transform: scale(1.05);
+    }
+  }
+
+}
+
+hr{
+  width: 90%;
+  margin: 5rem auto;
+  border: .2rem solid $grey;
+  background-color: $grey;
+  // box-shadow: $sd-grey;
+}
+
+.Extend{
+  grid-column: span 3;
+}
+
+.Footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: -4rem;
+  height: 8rem;
+  background-color: $red;
+  box-shadow: $sd-black;
+
+  &__Title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    background: none;
+    color: $white;
+  }
+
+  &__Subtitle{
+    font-size: 1rem;
+    background: none;
+    color: $white;
+  }
+
+}

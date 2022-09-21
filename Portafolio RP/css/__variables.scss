@@ -1,0 +1,62 @@
+
+//---------------------SIZE---------------------//
+
+$nav-height : 3.8rem;
+$dbl-nav-height : 7.6rem;
+
+//--------------------COLORS--------------------//
+
+$black : rgb(15, 15, 15);
+$white : rgb(248, 248, 248);
+
+$lg-grey : rgb(221, 218, 218);
+$grey : rgb(102, 102, 102);
+$drk-grey : rgb(58, 58, 58);
+
+$red : #b20000; 
+
+//-------------------SPECIALS-------------------//
+
+$white-gradient: linear-gradient(0deg, rgba(201,201,201,1) 0%, rgba(255,255,255,1) 65%);
+
+//--------------------SHADOW--------------------//
+
+$sd-lg-grey : 0 0 .8rem $lg-grey;
+$sd-grey : 0 0 .8rem $grey;
+$sd-black : 0 0 .8rem $black;
+
+
+@mixin bg-blur-grey {
+    backdrop-filter: blur(.5rem);
+    background-color: rgba(15, 15, 15, 0.350);
+}
+
+@mixin bg-blur-black {
+    backdrop-filter: blur(.5rem);
+    background-color: rgba(15, 15, 15, 0.651);
+}
+
+//---------------------FONTS--------------------//
+
+@font-face {
+    font-family: Montserrat;
+    src: url('/src/font/Montserrat-Medium.ttf');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('/src/font/Montserrat-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Time New Romance';
+    src: url('/src/font/Times New Romance-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('/src/font/OpenSans-Bold.ttf');
+    font-weight: 700;
+}
