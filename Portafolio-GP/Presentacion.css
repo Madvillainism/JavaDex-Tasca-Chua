@@ -1,0 +1,188 @@
+body{
+    font-family: sans-serif;
+    padding: 0;
+    background: #fff4e1;   
+    background-size: cover;
+    background-position: center;  
+    font-size: 16px;
+}
+html{
+    font-size: 65.5%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.Barra{   
+    color:#9fa3a9;
+}
+
+table{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+header{
+    display: flex;
+    min-height: 7rem;
+    justify-content: right;
+    align-items: center;
+    padding: 1rem;
+}
+
+*div{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+*h2, h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contenedor-Arriba{
+    background-color: white;
+    width: 120rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    justify-content: center;
+    padding: 0rem 0rem 2rem 0rem;
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+.Contenedor-izquierdo{   
+    float: left;
+    padding: 5rem;
+    width: 50%;
+    height: 20vh;
+}
+
+.Contenedor-izquierdo> img{ 
+    width: 30rem;  
+}
+.Contenedor-Derecho{
+    width: 100%;
+    height: 20rem;
+    padding: 1rem;
+}
+
+.Texto{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contenedor-Habilidades{
+    background-color: white;
+    width: 120rem;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    justify-content: center;
+    padding: 0rem 0rem 2rem 0rem;
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+.Habilidades-izquierdo{   
+    float: left;
+    padding: 5rem;
+    width: 100%;
+    height: 25rem;
+}
+
+.Habilidades-izquierdo> img{ 
+    width: 25rem;  
+}
+.Habilidades-Derecho{
+    width: 100%;
+    float: right;
+    height: 20vh;
+}
+
+.Habilidades-Texto{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+.Contenedor-Cursos{
+    background-color: white;
+    width: 120rem;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    justify-content: center;
+    padding: 0rem 0rem 2rem 0rem;
+    margin: 0rem 0rem 2rem 0rem;
+}
+
+.Cursos-izquierdo{   
+    float: left;
+    padding: 5rem;
+    width: 100%;
+    height: 25rem;
+}
+
+.Cursos-izquierdo> img{ 
+    width: 45rem;  
+}
+.Cursos-Derecho{
+    width: 100%;
+    float: right;
+    height: 20vh;
+}
+
+
+.Icono_de_WhatsApp{
+    display:flex;
+    align-items: center;
+}
+
+.Icono_de_WhatsApp img{
+    height: 20rem;    
+}
+.Foto{
+    height: 25rem;
+}
+.logo{
+    display:flex;
+    align-items: center;
+}
+
+.logo img{
+    height: 60px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    padding-right: 1rem;
+}
+
+nav a:hover{
+    color: #393d42;
+}
+
+div a:hover{
+    *color:rgba(255, 255, 255, 0.904);
+}
+
+@media (max-width: 700px){
+    header{
+        flex-direction: column;
+    }
+
+    nav{
+        padding: 1rem;
+    }
+}
