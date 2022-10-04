@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="css/styles.css">
 
     <title>TASCA-CHUA</title>
+
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myInput").value;
+            y=x.length;
+            textoAreaDividido = x.match(/\S+/g);
+            z = textoAreaDividido.length;
+            o = (x.match(/\r|\r\n|\n+/g)||[]).length+1
+            if (y==0){
+                z=0;
+                o=0;
+            }  
+          document.getElementById("demo").innerHTML = "Caracteres: " + y +" Palabras: "+ z + " Parrafos: "+o;
+       }
+        </script>
+
+
+   
+
 </head>
 
 <body>
@@ -30,13 +50,13 @@
 
         <li>
 
-            <a href="#">INICIO</a>
+            <a href="index.html">INICIO</a>
 
         </li>
 
         <li>
 
-            <a href="contadores.html" >CONTADORES</a>
+            <a href="#" >CONTADORES</a>
 
         </li>
         <li>
@@ -55,24 +75,10 @@
     <section id="PRES" class="bg-accent bg-position-center bg-size-cover py-2 py-sm-5 negro_fondo sepa"
         style="background-image: url(assets/img/fondo.gif);">
         <div class="container py-5">
-            <div class="row pt-md-5 pb-lg-5 justify-content-center">
-                <div class="col-xl-7 col-lg-8 col-md-10 text-center py-xl-3">
-                    <hr>
-
-                    <h1 class="text-light pb-sm-3" style="font-size: 3.5vw;">AQUÍ HABRA COSAS, EVENTUALMENTE</h1>
-                    <hr>
-<hr><hr>
-
-
-<hr>
-                    <h4 class="text-light pb-sm-3" style="font-size: 2.2vw">De momento y para no poner lorem, mire un bonito GIF de Squirtle en pixel art.</h2>
-                        <hr>
-<hr>
-<hr>
-<hr>
-
-
-                </div>
+            <div class="row pt-md-5 pb-lg-5 justify-content-center" >
+                <h1 class="text-light pb-sm-3" style="font-size: 3.5vw;">CONTADOR DE LUIS</h1>
+                <textarea id="myInput" class="col-6" rows="8" oninput="myFunction()"></textarea>
+                <p id="demo" style="color: white;"></p>
 
 
 
