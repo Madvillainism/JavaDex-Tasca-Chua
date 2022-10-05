@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"
+     href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" 
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" 
+    crossorigin="anonymous"
+    />
+    <title>Contador de Palabras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+
+    <div class="wrapper">
+    <h2 class="text-center"> Contador de Palabras</h2>
+      <div class="container">
+        <textarea
+          id="input-textarea" rows="12" placeholder="Escriba aqui..." ></textarea>
+      </div>
+      <div class="count">
+        <div class="wordsCounter">
+          <h5 id="word-count">0</h5>
+          <p>Palabras</p>
+        </div>
+        <div class="charactersCounter">
+          <h5 id="charac-count">0</h5>
+          <p>Caracteres</p>
+        </div>
+        <div class="rowsCounter">
+            <h5 id="row-count">0</h5>
+            <p>Líneas</p>
+          </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
+
