@@ -1,0 +1,12 @@
+body{
+    background-color: darkorchid;
+}
+#reloj {
+    font-size: 175px;
+    width: 1000px;
+    margin: 200px;
+    text-align: center;
+    border: 3px groove silver;
+    border-radius: 15px;
+    color:white;
+  }
