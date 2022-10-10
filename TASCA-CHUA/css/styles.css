@@ -367,6 +367,9 @@ input[type=checkbox]:checked ~ #menu{
 
 
 
+.digital{
+  font-family: 'digital-7';
+}
 
 
 
@@ -374,6 +377,11 @@ input[type=checkbox]:checked ~ #menu{
 
 
 
+
+@font-face{
+  font-family: 'digital-7';
+  src: url(../assets/fonts/digital-7.ttf);
+}
 
 
 
