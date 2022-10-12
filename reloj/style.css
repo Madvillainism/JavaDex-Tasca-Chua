@@ -1,0 +1,28 @@
+body {
+    font-family: "Work Sans", sans-serif;
+    background-image: url(img/capy.gif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position:bottom center; 
+    
+}
+.time { 
+  margin:100px auto;
+    background: #0c0c0c;
+    color: #fff;
+    border: 7px solid #fffcfc;
+    box-shadow: 0 2px 10px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+    padding: 8px;
+    text-align: center;
+    width: 500px;
+}
+.hms {
+    font-size: 68pt;
+    font-weight: 200;
+}
+.ampm {
+    font-size: 22pt;
+}
+.date {
+    font-size: 15pt;
+}
