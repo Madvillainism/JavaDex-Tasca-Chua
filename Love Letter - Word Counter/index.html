@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loveletter</title>
+
+    <link rel="stylesheet" href="assets/css/sakura.css" />
+    <link rel="stylesheet" href="assets/css/love.css">
+    <link rel="stylesheet" href="D:/Javascript/Love Letter - Word Counter/assets/fonts/Hello_calanthe.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/Cherryicon.ico">
+
+</head>
+<body>
+  <div class="title"> <center><h1>Loveletter</h1></center></div>
+  <center><div class="footer"></div></center>
+  <br>
+  <div class="texto">
+  <center><textarea name="contador" id="contador" cols="100" rows="13" class="count" onkeyup="contarletras(); contarpalabras(); contarlineas();" onpaste ="contarletras(); contarpalabras(); contarlineas();" placeholder="Plasma tus sentimientos..."></textarea></center>  
+
+  </div>
+  <center><button id="clearbtn" class="clearbtn">Clear</button></center>
+  <br>
+  <center><div class="footer"></div></center>
+  <div class="output" id="output">
+   <center><p>Has usado: <span id="lettercount">0</span> caracteres, <span id="wordcount">0</span> palabras y <span id="linecount">0</span> líneas.</p></center> 
+  </div>
+  <center><div class="footer"></div></center>
+  <br><br>
+
+
+  <script src="assets/js/main.js"></script>
+<script src="assets/js/sakura.js" text="text/javascript"></script>
+<script>
+  var sakura = new Sakura('body', {
+    
+    colors: [
+      {
+        gradientColorStart: 'rgba(255, 183, 197, 0.9)',
+        gradientColorEnd: 'rgba(255, 197, 208, 0.9)',
+        gradientColorDegree: 120,
+      },
+      {
+        gradientColorStart: 'rgba(255,189,189)',
+        gradientColorEnd: 'rgba(227,170,181)',
+        gradientColorDegree: 120,
+      },
+      {
+        gradientColorStart: 'rgba(212,152,163)',
+        gradientColorEnd: 'rgba(242,185,196)',
+        gradientColorDegree: 120,
+      },
+    ],
+    delay: 200,
+  });
+</script>
+  
+  
+</body>
+
+
+
+</html>
