@@ -1,0 +1,26 @@
+body{
+    background-color: black;
+}
+
+.container {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 175px);
+    width: 350px;
+    height: 200px;
+}
+
+
+.clock{
+    width: 350px;
+    height: 200px;
+}
+
+.numbers {
+    top: calc(80% - 25pt);
+    left: calc(17% - 25pt);
+    font-family: 'pixeltyperegular';
+    color: red;
+    position: absolute;
+    font-size: 50pt;
+}
