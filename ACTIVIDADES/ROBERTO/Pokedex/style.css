@@ -1,63 +1,100 @@
 html {
   font-family: Calibri;
 }
+
 html * {
   margin: 0;
   padding: 0;
 }
 
 .Form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 4rem;
+  width: 100%;
 }
+
 .Form * {
   font-family: 1.1rem;
-  margin: 0.5rem;
+  margin: .5rem;
 }
+
 .Form__Text {
   font-size: 2rem;
 }
+
 .Form__Input {
   font-size: 1rem;
-  padding: 0.2rem;
+  padding: .2rem;
 }
+
 .Form__Button {
   font-size: 1rem;
-  padding: 0.2rem;
+  padding: .2rem;
   cursor: pointer;
 }
 
 .Show {
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: repeat(8, minmax(5rem, 1fr));
-  grid-auto-rows: 22rem;
+  -ms-grid-columns: (minmax(2.5rem, 1fr))[8];
+      grid-template-columns: repeat(8, minmax(2.5rem, 1fr));
+  grid-auto-rows: 28rem;
   margin: 1rem 4rem;
   border-radius: 1rem;
-  box-shadow: 0 0 0.5rem rgb(58, 58, 58);
+  -webkit-box-shadow: 0 0 0.5rem #3a3a3a;
+          box-shadow: 0 0 0.5rem #3a3a3a;
 }
+
 .Show__Pokemon {
   grid-column: span 3;
   border-radius: 1rem 0 0 1rem;
   background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .Show__Info {
   grid-column: span 5;
   border-radius: 0 1rem 1rem 0;
   background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 1rem;
 }
+
 .Show__Info * {
-  margin: 0.5rem;
+  margin: .5rem;
 }
 
 .Pokemon__Sprite {
@@ -66,38 +103,49 @@ html * {
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 .Pokemon__Types {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  margin: 0.5rem;
+  margin: .5rem;
 }
 
 .Info__Name {
   font-size: 2.5rem;
   color: white;
-  margin: 0.2rem;
+  margin: .2rem;
 }
+
 .Info__Type {
   font-size: 1.1rem;
-  margin: 0 0 0.25rem;
-  padding: 0.3rem 1rem;
-  border-radius: 0.5rem;
+  margin: 0 0 .25rem;
+  padding: .3rem 1rem;
+  border-radius: .5rem;
   color: white;
   background-color: black;
   font-weight: bold;
 }
+
 .Info__Text {
-  margin: 0.5rem 0.5rem 0.3rem;
+  margin: .5rem .5rem .3rem;
 }
+
 .Info__Div {
   margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
+
 .Info__Item {
   font-size: 1.1rem;
-  margin: 0.2rem;
-  padding: 0.2rem 0.5rem;
-  border-radius: 0.5rem;
-  background-color: rgb(201, 198, 198);
-}/*# sourceMappingURL=style.css.map */
+  margin: .2rem;
+  padding: .2rem .5rem;
+  border-radius: .5rem;
+  background-color: #c9c6c6;
+}
+/*# sourceMappingURL=style.css.map */

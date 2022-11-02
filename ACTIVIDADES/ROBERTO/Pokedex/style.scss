@@ -15,7 +15,8 @@ html{
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 1rem auto;
+  margin: 1rem 4rem;
+  width: 100%;
   
   & *{
     font-family: 1.1rem;
@@ -41,8 +42,8 @@ html{
 
 .Show{
   display: grid;
-  grid-template-columns: repeat(8,minmax(5rem, 1fr));
-  grid-auto-rows: 22rem;
+  grid-template-columns: repeat(8,minmax(2.5rem, 1fr));
+  grid-auto-rows: 28rem;
   margin: 1rem 4rem;
   border-radius: 1rem;
   box-shadow: 0 0 .5rem rgb(58, 58, 58);
