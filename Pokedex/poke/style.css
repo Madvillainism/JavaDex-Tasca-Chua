@@ -1,0 +1,35 @@
+body{
+    box-sizing: border-box;
+    background-color: red;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.title{
+    font-weight: bolder;
+    display: flex;
+    justify-content: center;
+}
+
+.pokemon-container{
+    border: 2px solid goldenrod;
+    border-radius: 10px;
+    width : 1100px;
+    height: 200px;
+    margin-left: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/*Clases de la carta pokemon*/
+
+.pokemon-block{
+    border: 2px solid black;
+    border-radius: 15px;
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    box-shadow: 0px 2px 2px 2px white;
+}
