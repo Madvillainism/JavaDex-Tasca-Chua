@@ -1,130 +1,531 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <script src="js/script.js" type="text/javascript" defer></script>
+    <link href="css/styl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/boostrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/boostrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <title>TASCA-CHUA</title>
-</head>
-
-<body>
-
-
-    <section class="bg-accent bg-position-center bg-size-cover py-2 py-sm-5 negro_fondo"
-        style="background-image: url(assets/img/stars-train.png);">
-        <img src="assets/img/Tasca Chua-01.png" class="cabeza">
-
+  <body>
+    <section
+      class="bg-accent bg-position-center bg-size-cover py-2 py-sm-5 negro_fondo"
+      style="background-image: url(assets/img/stars-train.png)"
+    >
+      <img src="assets/img/Tasca Chua-01.png" class="cabeza" />
     </section>
 
+    <label for="show-menu" class="show-menu sticky-top"
+      ><img src="assets/img/barras.png" class="imgt3"
+    /></label>
+    <input type="checkbox" id="show-menu" role="button" />
 
-    <label for="show-menu" class="show-menu sticky-top"><img src="assets/img/barras.png" class="imgt3 "></label>
-    <input type="checkbox" id="show-menu" role="button">
+    <ul id="menu" class="sticky-top" style="justify-content: center">
+      <li>
+        <a href="index.html">INICIO</a>
+      </li>
 
-    <ul id="menu" class="sticky-top" style="justify-content: center;">
-
-
-
-        <li>
-
-            <a href="#">INICIO</a>
-
-        </li>
-
-        <li>
-
-            <a href="TAREAS DE LUIS.html" >CONTADORES</a>
-
-        </li>
-
-
-            <a href="luis.html">¿QUIENES SOMOS?</a>
-
-        </li>
-
-
+      <li>
+        <a href="buscar.html">BUSCAR</a>
+      </li>
+      <li>
+        <a href="quienes.html">¿QUIENES SOMOS?</a>
+      </li>
     </ul>
 
-    <section id="PRES" class="bg-accent bg-position-center bg-size-cover py-2 py-sm-5 negro_fondo sepa"
-        style="background-image: url(assets/img/fondo.gif);">
-        <div class="container py-5">
-            <div class="row pt-md-5 pb-lg-5 justify-content-center">
-                <div class="col-xl-7 col-lg-8 col-md-10 text-center py-xl-3">
-                    <hr>
+    <section
+      id="PRES"
+      class="bg-accent bg-position-center bg-size-cover py-2 py-sm-5 negro_fondo sepa"
+      style="background-image: url(assets/img/fondo.gif)"
+    >
+<div class="row">
 
-                    <h1 class="text-light pb-sm-3" style="font-size: 3.5vw;">AQUÍ HABRA COSAS, EVENTUALMENTE</h1>
-                    <hr>
-<hr><hr>
-
-
-<hr>
-                    <h4 class="text-light pb-sm-3" style="font-size: 2.2vw">De momento y para no poner lorem, mire un bonito GIF de Squirtle en pixel art.</h2>
-                        <hr>
-<hr>
-<hr>
-<hr>
+    <form action="" class="col 4" onsubmit="ata(event)">
+        <button type="submit" id="atra" disabled="true" class="col 4 btn btn-info">BACK</button>
+      </form>
 
 
+      <form action="" class="col 4" onsubmit="CargaInicial(event)">
+        <button type="submit" class="btn btn-info">INICIAR</button>
+      </form>
+
+      <form action="" class="col 4" onsubmit="sig(event)">
+        <button type="submit" id="siga" disabled="true "class="col 4 btn btn-info">NEXT</button>
+      </form>
+
+</div>
+
+
+
+
+      <div class="container py-5">
+        <div class="row pt-md-5 pb-lg-5 justify-content-center">
+          <div class="container">
+            <div class="row">
+              <div id="C1";
+                class="flip-container scroll-content fadeTop col-12 col-md-4 m"
+                style="text-align: center"
+              >
+        
+
+                <div class="flipper">
+                  <div class="front col-12">
+                    <img
+                      id="image1"
+                      class=""
+                      src="assets/img/missingno.png"
+                      alt=""
+                    />
+                    <br />
+                    <div class="col-12" style="text-align: center"></div>
+                  </div>
+
+                  <div class="back" id="back1">
+                    <img class="col-12" src="assets/img/backo.png" alt="" />
+                    <div class="col-12 centrado" style="text-align: center">
+                      <p id="textA1" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textB1" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textC1" style="color: black">
+                        who's that pokemon?
+                      </p>
+                    </div>
+                  </div>
                 </div>
+              </div>
+
+              <div id="C2";
+                class="flip-container scroll-content fadeTop col-12 col-md-4 m"
+                style="text-align: center"
+              >
+        
+
+                <div class="flipper">
+                  <div class="front col-12">
+                    <img
+                      id="image2"
+                      class=""
+                      src="assets/img/missingno.png"
+                      alt=""
+                    />
+                    <br />
+                    <div class="col-12" style="text-align: center"></div>
+                  </div>
+
+                  <div class="back" id="back2">
+                    <img class="col-12" src="assets/img/backo.png" alt="" />
+                    <div class="col-12 centrado" style="text-align: center">
+                      <p id="textA2" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textB2" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textC2" style="color: black">
+                        who's that pokemon?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="C3";
+                class="flip-container scroll-content fadeTop col-12 col-md-4 m"
+                style="text-align: center"
+              >
+        
+
+                <div class="flipper">
+                  <div class="front col-12">
+                    <img
+                      id="image3"
+                      class="col-12"
+                      src="assets/img/missingno.png"
+                      alt=""
+                    />
+                    <br />
+                    <div class="col-12" style="text-align: center"></div>
+                  </div>
+
+                  <div class="back" id="back3">
+                    <img class="col-12" src="assets/img/backo.png" alt="" />
+                    <div class="col-12 centrado" style="text-align: center">
+                      <p id="textA3" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textB3" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textC3" style="color: black">
+                        who's that pokemon?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="C4";
+                class="flip-container scroll-content fadeTop col-12 col-md-4 m"
+                style="text-align: center"
+              >
+        
+
+                <div class="flipper">
+                  <div class="front col-12">
+                    <img
+                      id="image4"
+                      class="col-12"
+                      src="assets/img/missingno.png"
+                      alt=""
+                    />
+                    <br />
+                    <div class="col-12" style="text-align: center"></div>
+                  </div>
+
+                  <div class="back" id="back4">
+                    <img class="col-12" src="assets/img/backo.png" alt="" />
+                    <div class="col-12 centrado" style="text-align: center">
+                      <p id="textA4" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textB4" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textC4" style="color: black">
+                        who's that pokemon?
+                      </p>
+                    </div>
+                  </div>
+
+                  <br />
+                </div>
+              </div>
+
+              <div id="C5";
+                class="flip-container scroll-content fadeTop col-12 col-md-4 m"
+                style="text-align: center"
+              >
+        
+
+                <div class="flipper">
+                  <div class="front col-12">
+                    <img
+                      id="image5"
+                      class="col-12"
+                      src="assets/img/missingno.png"
+                      alt=""
+                    />
+                    <br />
+                    <div class="col-12" style="text-align: center"></div>
+                  </div>
+
+                  <div class="back" id="back5">
+                    <img class="col-12" src="assets/img/backo.png" alt="" />
+                    <div class="col-12 centrado" style="text-align: center">
+                      <p id="textA5" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textB5" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textC5" style="color: black">
+                        who's that pokemon?
+                      </p>
+                    </div>
+                  </div>
+
+                  <br />
+                </div>
+              </div>
+
+              <div id="C6";
+                class="flip-container scroll-content fadeTop col-12 col-md-4 m"
+                style="text-align: center"
+              >
+        
+
+                <div class="flipper">
+                  <div class="front col-12">
+                    <img
+                      id="image6"
+                      class="col-12"
+                      src="assets/img/missingno.png"
+                      alt=""
+                    />
+                    <br />
+                    <div class="col-12" style="text-align: center"></div>
+                  </div>
+
+                  <div class="back" id="back6">
+                    <img class="col-12" src="assets/img/backo.png" alt="" />
+                    <div class="col-12 centrado" style="text-align: center">
+                      <p id="textA6" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textB6" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textC6" style="color: black">
+                        who's that pokemon?
+                      </p>
+                    </div>
+                  </div>
+
+                  <br />
+                </div>
+              </div>
+
+              <div id="C7";
+                class="flip-container scroll-content fadeTop col-12 col-md-4 m"
+                style="text-align: center"
+              >
+        
+
+                <div class="flipper">
+                  <div class="front col-12">
+                    <img
+                      id="image7"
+                      class="col-12"
+                      src="assets/img/missingno.png"
+                      alt=""
+                    />
+                    <br />
+                    <div class="col-12" style="text-align: center"></div>
+                  </div>
+
+                  <div class="back" id="back7">
+                    <img class="col-12" src="assets/img/backo.png" alt="" />
+                    <div class="col-12 centrado" style="text-align: center">
+                      <p id="textA7" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textB7" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textC7" style="color: black">
+                        who's that pokemon?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="C8";
+                class="flip-container scroll-content fadeTop col-12 col-md-4 m"
+                style="text-align: center"
+              >
+        
+
+                <div class="flipper">
+                  <div class="front col-12">
+                    <img
+                      id="image8"
+                      class="col-12"
+                      src="assets/img/missingno.png"
+                      alt=""
+                    />
+                    <br />
+                    <div class="col-12" style="text-align: center"></div>
+                  </div>
+
+                  <div class="back" id="back8">
+                    <img class="col-12" src="assets/img/backo.png" alt="" />
+                    <div class="col-12 centrado" style="text-align: center">
+                      <p id="textA8" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textB8" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textC8" style="color: black">
+                        who's that pokemon?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="C9";
+                class="flip-container scroll-content fadeTop col-12 col-md-4 m"
+                style="text-align: center"
+              >
 
 
+                <div class="flipper">
+                  <div class="front col-12">
+                    <img
+                      id="image9"
+                      class="col-12"
+                      src="assets/img/missingno.png"
+                      alt=""
+                    />
+                    <br />
+                    <div class="col-12" style="text-align: center"></div>
+                  </div>
+
+                  <div class="back" id="back9">
+                    <img class="col-12" src="assets/img/backo.png" alt="" />
+                    <div class="col-12 centrado" style="text-align: center">
+                      <p id="textA9" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textB9" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textC9" style="color: black">
+                        who's that pokemon?
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="C10";
+                class="flip-container scroll-content fadeTop col-12 col-md-4 m"
+                style="text-align: center"
+              >
+
+            
+                <div class="flipper">
+                  <div class="front col-12">
+                    <img
+                      id="image10"
+                      class="col-12"
+                      src="assets/img/missingno.png"
+                      alt=""
+                    />
+                    <br />
+                    <div class="col-12" style="text-align: center"></div>
+                  </div>
+
+                  <div class="back" id="back10">
+                    <img class="col-12" src="assets/img/backo.png" alt="" />
+                    <div class="col-12 centrado" style="text-align: center">
+                      <p id="textA10" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textB10" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textC10" style="color: black">
+                        who's that pokemon?
+                      </p>
+                    </div>
+                  </div>
+
+                  <br />
+                </div>
+              </div>
+
+              <div id="C11";
+                class="flip-container scroll-content fadeTop col-12 col-md-4 m"
+                style="text-align: center"
+              >
 
 
+                <div class="flipper">
+                  <div class="front col-12">
+                    <img
+                      id="image11"
+                      class="col-12"
+                      src="assets/img/missingno.png"
+                      alt=""
+                    />
+                    <br />
+                    <div class="col-12" style="text-align: center"></div>
+                  </div>
+
+                  <div class="back" id="back11">
+                    <img class="col-12" src="assets/img/backo.png" alt="" />
+                    <div class="col-12 centrado" style="text-align: center">
+                      <p id="textA11" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textB11" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textC11" style="color: black">
+                        who's that pokemon?
+                      </p>
+                    </div>
+                  </div>
+
+                  <br />
+                </div>
+              </div>
+
+              <div id="C12";
+                class="flip-container scroll-content fadeTop col-12 col-md-4 m"
+                style="text-align: center"
+              >
 
 
+                <div class="flipper">
+                  <div class="front col-12">
+                    <img
+                      id="image12"
+                      class="col-12"
+                      src="assets/img/missingno.png"
+                      alt=""
+                    />
+                    <br />
+                    <div class="col-12" style="text-align: center"></div>
+                  </div>
 
+                  <div class="back" id="back12">
+                    <img class="col-12" src="assets/img/backo.png" alt="" />
+                    <div class="col-12 centrado" style="text-align: center">
+                      <p id="textA12" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textB12" style="color: black">
+                        who's that pokemon?
+                      </p>
+                      <p id="textC12" style="color: black">
+                        who's that pokemon?
+                      </p>
+                    </div>
+                  </div>
+
+                  <br />
+                </div>
+              </div>
             </div>
+
+
+
+                <label id="pag">...</label>
+
+
+
+            <br />
+          </div>
         </div>
+      </div>
+
+      
+
     </section>
 
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
+    <script src="js/j.js"></script>
 
     <footer class="bg-light text-center text-lg-start">
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2022 Copyright:
-        </div>
-        <!-- Copyright -->
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        © 2022 Copyright:
+      </div>
+      <!-- Copyright -->
     </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-</body>
-
+  </body>
 </html>

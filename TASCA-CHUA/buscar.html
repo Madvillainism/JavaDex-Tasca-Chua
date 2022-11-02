@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pokedex</title>
+    <script src="js/script.js" type="text/javascript" defer></script>
+    <link href="css/styl.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/boostrap.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+
+  <body>
+    <section
+      class="bg-accent bg-position-center bg-size-cover py-2 py-sm-5 negro_fondo"
+      style="background-image: url(assets/img/stars-train.png)"
+    >
+      <img src="assets/img/Tasca Chua-01.png" class="cabeza" />
+    </section>
+
+    <label for="show-menu" class="show-menu sticky-top"
+      ><img src="assets/img/barras.png" class="imgt3"
+    /></label>
+    <input type="checkbox" id="show-menu" role="button" />
+
+    <ul id="menu" class="sticky-top" style="justify-content: center">
+      <li>
+        <a href="index.html">INICIO</a>
+      </li>
+
+      <li>
+        <a href="buscar.html">BUSCAR</a>
+      </li>
+      <li>
+        <a href="quienes.html">¿QUIENES SOMOS?</a>
+      </li>
+    </ul>
+
+    <form action="" onsubmit="searchPokemon(event), searchLocation(event)">
+      <input type="text" name="pokemon" autocomplete="off" />
+    </form>
+
+    <div class="container" id="contemain" style="background-color: rgb(32, 31, 31); color:rgb(255, 255, 255)">
+      
+
+      <div class="row">
+        <div class="col-12 col-md-7" style="text-align: center">
+          <img class="col-7 col-sm-9" id="pokeimg" src="./assets/img/poke-shadow.png" alt="" />
+        </div>
+
+        <div class="col-12 col-md-5" id="imgcon"style="text-align: center">
+          <div class="row">
+            
+            <div class="col-12 col-md-6" id="pokeId" style="text-align: center">
+              <br>
+              
+<br>
+<br>
+              <p>NUMBER</p>
+            </div>
+
+            <div class="col-12 col-md-6" id="name" style="text-align: center">
+              <br>
+              
+<br>
+<br>
+              <p>POKEMON</p>
+            </div>
+
+
+            <br>
+            <br>
+
+            <div class="col-12 col" id="type1" style="text-align: center">
+              <p>TYPE: ????</p>
+            </div>
+            
+<br>
+<br>
+            <div class="col-12 col" id="type2" style="text-align: center">
+              <p>TYPE: ????</p>
+            </div>
+
+
+            <br>
+            <br>
+
+              <div class="col-12 col" id="abilities" style="text-align: center">
+                <p>ABILITIES: ???????????????</p>
+          </div>
+
+<br>
+<br>
+
+          <div class="col-12 col" id="locations" style="text-align: center">
+            <p>LOCATIONS: ????????????????</p>
+      </div>
+
+    <div class="row">
+      <div class="col-12 col-md-4" style="text-align: center">
+        <p id="stat0">VIT:-----</p>
+      </div>
+
+      <div class="col-12 col-md-4"style="text-align: center">
+        <p id="stat1">ATK:-----</p>
+      </div>
+
+      <div class="col-12 col-md-4" style="text-align: center">
+        <p id="stat2">DEF:-----</p>
+      </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-12 col-md-4" style="text-align: center">
+      <p id="stat3">SPA:-----</p>
+    </div>
+
+    <div class="col-12 col-md-4" style="text-align: center">
+      <p id="stat4">SPD:-----</p>
+    </div>
+
+    <div class="col-12 col-md-4" style="text-align: center">
+      <p id="stat5">SPE:-----</p>
+    </div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  <br>
+  </div>
+
+  </body>
+  <br />
+  <br />
+  <br />
+  <br />
+</html>
