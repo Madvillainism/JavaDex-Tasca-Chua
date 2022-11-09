@@ -1,0 +1,159 @@
+/* Inicio pasar de px a rem */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+html{
+    font-size: 65.5%;
+}
+
+body{
+        background-image: url(./pokemon-nombres-graciosos.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;    
+}
+
+
+body{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* footer */
+
+footer{
+    *display: block;
+    background: #1D2E43;
+    padding: 6rem 0 2rem 0;
+    *margin: auto;
+    *overflow: hidden;
+    margin-top: auto;
+    position: relative;
+    width: 100%;
+    bottom: 0rem;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 5rem;
+    border-bottom: 1rem solid #46A2FD;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    color: #FFFFFF;
+}
+
+@media screen and (max-width:500px){   
+    /* Footer inicio*/
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        border-bottom: 1px solid #46A2FD;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-size: 20px;
+    }
+
+    /* Footer final */
+}
+
+/*h1 */
+
+.Con-h1{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    *height: auto;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    background-color: #1D2E43;
+    color: #FFFFFF;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10rem;
+    border: 1rem solid #46A2FD;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Fin h1
+
+  Buscar
+*/
+
+.cont-Buscar{
+    display: flex;
+    justify-content: space-evenly;
+    width: 20%;
+    *height: auto;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    background-color: #46A2FD;
+    *color: #FFFFFF;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10rem;
+    border: 1rem solid #46A2FD;
+}
+
+.Buscar{
+    width: 100%;
+    border: none;
+}
+
+/*Fin Buscar
+
+pokemon-container
+*/
+
+.pokemon-container{
+    display: grid;
+    justify-content: space-evenly;
+    width: 80%;
+    *height: auto;
+    margin: 1rem 0rem;
+    padding: 1rem;
+    background-color: #1D2E43;
+    color: #FFFFFF;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10rem;
+    border: 1rem solid #46A2FD;
+}
