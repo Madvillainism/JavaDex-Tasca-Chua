@@ -1,142 +1,341 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pokedex</title>
-    <script src="js/script.js" type="text/javascript" defer></script>
-    <link href="css/styl.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/boostrap.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
 
-  <body>
-    <section
-      class="bg-accent bg-position-center bg-size-cover py-2 py-sm-5 negro_fondo"
-      style="background-image: url(assets/img/stars-train.png)"
-    >
-      <img src="assets/img/Tasca Chua-01.png" class="cabeza" />
-    </section>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokedex</title>
+  <script src="js/script.js" type="text/javascript" defer></script>
+  <link href="css/styl.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/boostrap.min.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 
-    <label for="show-menu" class="show-menu sticky-top"
-      ><img src="assets/img/barras.png" class="imgt3"
-    /></label>
-    <input type="checkbox" id="show-menu" role="button" />
 
-    <ul id="menu" class="sticky-top" style="justify-content: center">
-      <li>
-        <a href="index.html">INICIO</a>
-      </li>
 
-      <li>
-        <a href="buscar.html">BUSCAR</a>
-      </li>
-      <li>
-        <a href="quienes.html">¿QUIENES SOMOS?</a>
-      </li>
-    </ul>
 
-    <form action="" onsubmit="searchPokemon(event), searchLocation(event)">
-      <input type="text" name="pokemon" autocomplete="off" />
-    </form>
 
-    <div class="container" id="contemain" style="background-color: rgb(32, 31, 31); color:rgb(255, 255, 255)">
-      
 
-      <div class="row">
-        <div class="col-12 col-md-7" style="text-align: center">
-          <img class="col-7 col-sm-9" id="pokeimg" src="./assets/img/poke-shadow.png" alt="" />
-        </div>
 
-        <div class="col-12 col-md-5" id="imgcon"style="text-align: center">
-          <div class="row">
-            
-            <div class="col-12 col-md-6" id="pokeId" style="text-align: center">
-              <br>
-              
-<br>
-<br>
-              <p>NUMBER</p>
-            </div>
 
-            <div class="col-12 col-md-6" id="name" style="text-align: center">
-              <br>
-              
-<br>
-<br>
-              <p>POKEMON</p>
-            </div>
 
+
+</head>
+
+<body>
+  <section class="bg-accent bg-position-center bg-size-cover py-2 py-sm-5 negro_fondo"
+    style="background-image: url(assets/img/stars-train.png)">
+    <img src="assets/img/Tasca Chua-01.png" class="cabeza" />
+  </section>
+
+  <label for="show-menu" class="show-menu sticky-top"><img src="assets/img/barras.png" class="imgt3" /></label>
+  <input type="checkbox" id="show-menu" role="button" />
+
+  <ul id="menu" class="sticky-top" style="justify-content: center">
+
+    <li><a href="index.html">INICIO</a></li>
+
+
+    <li><a href="#">BUSCAR</a></li>
+
+
+    <li><a href="quienes.html">¿QUIENES SOMOS?</a></li>
+
+    <li><a href="luis.html">OLD</a></li>
+  </ul>
+
+  <form action="" onsubmit="searchPokemon(event), searchLocation(event)">
+    <input type="text" name="pokemon" autocomplete="off" />
+  </form>
+
+  <div class="container" id="contemain" style="background-color: rgb(32, 31, 31); color:rgb(255, 255, 255)">
+
+
+    <div class="row">
+      <div class="col-12 col-md-7" style="text-align: center">
+        <img class="col-7 col-sm-9" id="pokeimg" src="./assets/img/poke-shadow.png" alt="" />
+      </div>
+
+      <div class="col-12 col-md-5" id="imgcon" style="text-align: center">
+        <div class="row">
+
+          <div class="col-12 col-md-6" id="pokeId" style="text-align: center">
+            <br>
 
             <br>
             <br>
-
-            <div class="col-12 col" id="type1" style="text-align: center">
-              <p>TYPE: ????</p>
-            </div>
-            
-<br>
-<br>
-            <div class="col-12 col" id="type2" style="text-align: center">
-              <p>TYPE: ????</p>
-            </div>
-
-
-            <br>
-            <br>
-
-              <div class="col-12 col" id="abilities" style="text-align: center">
-                <p>ABILITIES: ???????????????</p>
+            <p>NUMBER</p>
           </div>
 
-<br>
-<br>
+          <div class="col-12 col-md-6" id="name" style="text-align: center">
+            <br>
+
+            <br>
+            <br>
+            <p>POKEMON</p>
+          </div>
+
+
+          <br>
+          <br>
+
+          <div class="col-12 col" id="type1" style="text-align: center">
+            <p>TYPE: ????</p>
+          </div>
+
+          <br>
+          <br>
+          <div class="col-12 col" id="type2" style="text-align: center">
+            <p>TYPE: ????</p>
+          </div>
+
+
+          <br>
+          <br>
+
+          <div class="col-12 col" id="abilities" style="text-align: center">
+            <p>ABILITIES: ???????????????</p>
+          </div>
+
+          <br>
+          <br>
 
           <div class="col-12 col" id="locations" style="text-align: center">
             <p>LOCATIONS: ????????????????</p>
-      </div>
-
-    <div class="row">
-      <div class="col-12 col-md-4" style="text-align: center">
-        <p id="stat0">VIT:-----</p>
-      </div>
-
-      <div class="col-12 col-md-4"style="text-align: center">
-        <p id="stat1">ATK:-----</p>
-      </div>
-
-      <div class="col-12 col-md-4" style="text-align: center">
-        <p id="stat2">DEF:-----</p>
-      </div>
-  </div>
-
-
-  <div class="row">
-    <div class="col-12 col-md-4" style="text-align: center">
-      <p id="stat3">SPA:-----</p>
-    </div>
-
-    <div class="col-12 col-md-4" style="text-align: center">
-      <p id="stat4">SPD:-----</p>
-    </div>
-
-    <div class="col-12 col-md-4" style="text-align: center">
-      <p id="stat5">SPE:-----</p>
-    </div>
-</div>
-
-
           </div>
+
+          <div class="row">
+            <div class="col-12 col-md-4" style="text-align: center">
+              <p id="stat0">VIT:-----</p>
+            </div>
+
+            <div class="col-12 col-md-4" style="text-align: center">
+              <p id="stat1">ATK:-----</p>
+            </div>
+
+            <div class="col-12 col-md-4" style="text-align: center">
+              <p id="stat2">DEF:-----</p>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-12 col-md-4" style="text-align: center">
+              <p id="stat3">SPA:-----</p>
+            </div>
+
+            <div class="col-12 col-md-4" style="text-align: center">
+              <p id="stat4">SPD:-----</p>
+            </div>
+
+            <div class="col-12 col-md-4" style="text-align: center">
+              <p id="stat5">SPE:-----</p>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </div>
+  </div>
   <br>
+
+
+  <div class="container" id="contemain" style="background-color: rgb(32, 31, 31); color:rgb(255, 255, 255)">
+    <div class="row">
+
+
+
+
+    </div>
+
+    <div class="container">
+
+      <div class="row">
+
+
+        <div class="col-12" style="background-color: white; border: 2px solid black;">
+          <p>REGISTRO DE BUSQUEDAS</p>
+          <div class="row">
+            <div class="col-12">
+              <p id="registrosC"></p>
+
+              <p id="registros"></p>
+
+            </div>
+          </div>
+
+          <p>REGISTRO SIN COINCIDENCIA</p>
+          <div class="row">
+            <div class="col-12">
+              <p id="registrosFC"></p>
+              <p id="registrosF"></p>
+
+
+            </div>
+          </div>
+          <br>
+        </div>
+
+
+        <div class="col-12" style="background-color: white; border: 2px solid black;">
+          <p>REGIONES</p>
+          <div class="row">
+            <div class="col-6">
+              <br>
+              <ul class="list-group">
+                <li class="col-12 list-group-item">KANTO</li>
+                <li class="col-12 list-group-item">JOHTO</li>
+                <li class="col-12 list-group-item">HOENN</li>
+                <li class="col-12 list-group-item">SINNOH</li>
+                <li class="col-12 list-group-item">UNOVA</li>
+                <li class="col-12 list-group-item">KALOS</li>
+                <li class="col-12 list-group-item">ALOLA</li>
+                <li class="col-12 list-group-item">GALAR</li>
+                <li class="col-12 list-group-item">???</li>
+
+              </ul>
+              <br>
+            </div>
+            <div class="col-6">
+
+              <br>
+              <ul class="list-group">
+                <li class="col-12 list-group-item" id="reg1">0</li>
+                <li class="col-12 list-group-item" id="reg2">0</li>
+                <li class="col-12 list-group-item" id="reg3">0</li>
+                <li class="col-12 list-group-item" id="reg4">0</li>
+                <li class="col-12 list-group-item" id="reg5">0</li>
+                <li class="col-12 list-group-item" id="reg6">0</li>
+                <li class="col-12 list-group-item" id="reg7">0</li>
+                <li class="col-12 list-group-item" id="reg8">0</li>
+                <li class="col-12 list-group-item" id="reg9">0</li>
+
+              </ul>
+              <br>
+
+
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <div class="col-12" style="background-color: white; border: 2px solid black;">
+          <p>TIPOS</p>
+          <div class="row">
+            <div class="col-6">
+              <br>
+              <ul class="list-group">
+                <li class="col-12 list-group-item">NORMAL</li>
+                <li class="col-12 list-group-item">GRASS</li>
+                <li class="col-12 list-group-item">FIRE</li>
+                <li class="col-12 list-group-item">WATER</li>
+                <li class="col-12 list-group-item">ELECTRIC</li>
+                <li class="col-12 list-group-item">FLYING</li>
+                <li class="col-12 list-group-item">BUG</li>
+                <li class="col-12 list-group-item">POISON</li>
+                <li class="col-12 list-group-item">GROUND</li>
+                <li class="col-12 list-group-item">ROCK</li>
+                <li class="col-12 list-group-item">ICE</li>
+                <li class="col-12 list-group-item">DARK</li>
+                <li class="col-12 list-group-item">GHOST</li>
+                <li class="col-12 list-group-item">PSYCHIC</li>
+                <li class="col-12 list-group-item">FIGHTING</li>
+                <li class="col-12 list-group-item">STEEL</li>
+                <li class="col-12 list-group-item">DRAGON</li>
+                <li class="col-12 list-group-item">FAIRY</li>
+
+              </ul>
+              <br>
+            </div>
+            <div class="col-6">
+
+              <br>
+              <ul class="list-group">
+                <li class="col-12 list-group-item" id="normal">0</li>
+                <li class="col-12 list-group-item" id="grass">0</li>
+                <li class="col-12 list-group-item" id="fire">0</li>
+                <li class="col-12 list-group-item" id="water">0</li>
+                <li class="col-12 list-group-item" id="electric">0</li>
+                <li class="col-12 list-group-item" id="flying">0</li>
+                <li class="col-12 list-group-item" id="bug">0</li>
+                <li class="col-12 list-group-item" id="poison">0</li>
+                <li class="col-12 list-group-item" id="ground">0</li>
+                <li class="col-12 list-group-item" id="rock">0</li>
+                <li class="col-12 list-group-item" id="ice">0</li>
+                <li class="col-12 list-group-item" id="dark">0</li>
+                <li class="col-12 list-group-item" id="ghost">0</li>
+                <li class="col-12 list-group-item" id="psychic">0</li>
+                <li class="col-12 list-group-item" id="fighting">0</li>
+                <li class="col-12 list-group-item" id="steel">0</li>
+                <li class="col-12 list-group-item" id="dragon">0</li>
+                <li class="col-12 list-group-item" id="fairy">0</li>
+
+              </ul>
+              <br>
+
+
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+
   </div>
 
-  </body>
-  <br />
-  <br />
-  <br />
-  <br />
-</html>
+
+
+  </div>
+
+
+
+  </div>
+
+
+  <div>
+    <div class="flotante row pt-md-5 pb-lg-5 justify-content-center">
+
+
+      <div class="pt-md-1 justify-content-center" style="background-color: black;">
+        <h1 class="text-light clock digital "
+          style="font-size: 3vw; border: 10px dotted white; background-color: black;">00:00:00</h1>
+
+      </div>
+
+      <button class="button col-6 btn btn-dark">Formato</button>
+
+    </div>
+  </div>
+
+
+
+</body>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+
+
+<script src="js/j.js"></script>
+<footer class="bg-light text-center text-lg-start">
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+
+</htm

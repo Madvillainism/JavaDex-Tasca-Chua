@@ -1,5 +1,9 @@
 const main = document.getElementById("contemain");
 const Name = document.getElementById("name");
+const Rnames = document.getElementById("registros");
+const RnamesC = document.getElementById("registrosC");
+const RnamesF = document.getElementById("registrosF");
+const RnamesFC = document.getElementById("registrosFC");
 const pokeId = document.getElementById("pokeId");
 const pokeImg = document.getElementById("pokeimg");
 const pokeImgContainer = document.getElementById("imgcon");
@@ -25,10 +29,9 @@ const typeColors = {
   dragon: "#DA627D",
   steel: "#1D8A99",
   fighting: "#2F2F2F",
+  fairy: "#FFC0CB",
   default: "#2A1A1F",
 };
-
-
 
 const searchPokemon = (event) => {
   event.preventDefault();
@@ -45,39 +48,34 @@ const searchLocation = (event) => {
   fetch(`https://pokeapi.co/api/v2/pokemon/${value.toLowerCase()}/encounters`)
     .then((location_area_encounters) => location_area_encounters.json())
     .then((response) => localizaciones(response))
-    .catch((err) => renderNotFound());
-
+    .catch((err) => renderNotFound(value));
 };
 
-
-
-const renderNotFound = () => {
+const renderNotFound = (value) => {
   Name.textContent = "No encontrado";
+  RnamesF.textContent = RnamesF.textContent + " / " + value.toUpperCase();
+  textoAreaDividido = RnamesF.textContent.split("/");
+  z = textoAreaDividido.length - 1;
+  RnamesFC.textContent = z;
   pokeImg.setAttribute("src", "nop.gif");
   pokeImg.style.background = "#fff";
   type1.innerHTML = "";
   type2.innerHTML = "";
 
   pokeId.textContent = "";
-  let i =0;
+  let i = 0;
   let nel;
   locals.textContent = "";
   ability.textContent = "";
 
   do {
-
     nel = document.getElementById("stat" + i).innerHTML;
 
     document.getElementById("stat" + i).textContent =
       nel.substring(0, 8) + ":" + "";
     i++;
-
   } while (i < 6);
-
-
-
 };
-
 
 const localizaciones = (location_area_encounters) => {
   let long = location_area_encounters.length;
@@ -89,37 +87,41 @@ const localizaciones = (location_area_encounters) => {
   switch (long) {
     case 0:
       locals.textContent = "LOCATIONS:---";
-    
-     break;
+
+      break;
 
     case 1:
-      a1 = "LOCATIONS: " + location_area_encounters[0].location_area.name.toUpperCase();
+      a1 =
+        "LOCATIONS: " +
+        location_area_encounters[0].location_area.name.toUpperCase();
       locals.textContent = a1;
-console.log(locals)
+      console.log(locals);
       break;
     case 2:
-      a1 = "LOCATIONS: " + location_area_encounters[0].location_area.name.toUpperCase();
-      a2 = " /// " + location_area_encounters[1].location_area.name.toUpperCase();
+      a1 =
+        "LOCATIONS: " +
+        location_area_encounters[0].location_area.name.toUpperCase();
+      a2 =
+        " /// " + location_area_encounters[1].location_area.name.toUpperCase();
 
       locals.textContent = a1 + a2;
-      console.log(locals)
+      console.log(locals);
 
       break;
 
     default:
-      a1 = "LOCATIONS: " + location_area_encounters[0].location_area.name.toUpperCase();
-      a2 = " /// " + location_area_encounters[1].location_area.name.toUpperCase();
-      a3 = " /// " + location_area_encounters[2].location_area.name.toUpperCase();
+      a1 =
+        "LOCATIONS: " +
+        location_area_encounters[0].location_area.name.toUpperCase();
+      a2 =
+        " /// " + location_area_encounters[1].location_area.name.toUpperCase();
+      a3 =
+        " /// " + location_area_encounters[2].location_area.name.toUpperCase();
 
-      locals.textContent = a1 + a2+a3;
+      locals.textContent = a1 + a2 + a3;
 
-      console.log(locals)
-
-
+      console.log(locals);
   }
-
-
-
 };
 
 const renderPokemonData = (data) => {
@@ -127,8 +129,47 @@ const renderPokemonData = (data) => {
   const { stats, types, abilities } = data;
 
   Name.textContent = data.name.toUpperCase();
+  Rnames.textContent = Rnames.textContent + " / " + data.name.toUpperCase();
+  textoAreaDividido = Rnames.textContent.split("/");
+  z = textoAreaDividido.length - 1;
+  RnamesC.textContent = z;
   pokeImg.setAttribute("src", sprite);
   pokeId.textContent = `Nº ${data.id}`;
+
+  switch (true) {
+    case data.id > 0 && data.id <= 151:
+      document.getElementById("reg1").innerHTML=parseInt(document.getElementById("reg1").innerHTML)+1;
+      break;
+    case data.id >= 152 && data.id <= 251:
+      document.getElementById("reg2").innerHTML=parseInt(document.getElementById("reg2").innerHTML)+1;
+      break;
+
+    case data.id >= 252 && data.id <= 386:
+      document.getElementById("reg3").innerHTML=parseInt(document.getElementById("reg3").innerHTML)+1;
+      break;
+
+
+    case data.id >= 387 && data.id <= 493:
+      document.getElementById("reg4").innerHTML=parseInt(document.getElementById("reg4").innerHTML)+1;
+      break;
+    case data.id >= 494 && data.id <= 649:
+      document.getElementById("reg5").innerHTML=parseInt(document.getElementById("reg5").innerHTML)+1;
+      break;
+    case data.id >= 650 && data.id <= 721:
+      document.getElementById("reg6").innerHTML=parseInt(document.getElementById("reg6").innerHTML)+1;
+      break;
+    case data.id >= 722 && data.id <= 809:
+      document.getElementById("reg7").innerHTML=parseInt(document.getElementById("reg7").innerHTML)+1;
+      break;
+    case data.id >= 810 && data.id <= 898:
+      document.getElementById("reg8").innerHTML=parseInt(document.getElementById("reg8").innerHTML)+1;
+      break;
+
+    default:
+      document.getElementById("reg9").innerHTML=parseInt(document.getElementById("reg9").innerHTML)+1;
+      break;
+  }
+
   setCardColor(types);
   renderPokemonTypes(types);
   abil(abilities);
@@ -188,6 +229,9 @@ const renderPokemonTypes = (types) => {
   if (types.length < 2) {
     type1.style.color = typeColors[types[0].type.name];
     type1.textContent = "TYPE: " + types[0].type.name.toUpperCase();
+    document.getElementById(types[0].type.name).innerHTML=parseInt(document.getElementById(types[0].type.name).innerHTML)+1;
+
+    
     document.getElementById("type2").style.display = "none";
   } else {
     document.getElementById("type2").style.display = "initial";
@@ -195,20 +239,21 @@ const renderPokemonTypes = (types) => {
     type2.textContent = "TYPE 2: " + types[1].type.name.toUpperCase();
     type1.style.color = typeColors[types[0].type.name];
     type2.style.color = typeColors[types[1].type.name];
+    document.getElementById(types[0].type.name).innerHTML=parseInt(document.getElementById(types[0].type.name).innerHTML)+1;
+    document.getElementById(types[1].type.name).innerHTML=parseInt(document.getElementById(types[1].type.name).innerHTML)+1;
+
   }
 };
 
 const renderPokemonStats = (stats) => {
-  let i =0;
+  let i = 0;
   let nel;
   do {
-
     nel = document.getElementById("stat" + i).innerHTML;
 
     document.getElementById("stat" + i).textContent =
       nel.substring(0, 8) + ":" + stats[i].base_stat;
     i++;
-
   } while (i < 6);
 };
 
