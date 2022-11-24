@@ -58,7 +58,14 @@ const showPokemon = async (inputName)=>{
     console.log(pokemon);
 }
 
+const removeChild = ()=>{
+  while(abilities.hasChildNodes()){
+    abilities.removeChild(abilities.firstChild);
+  }
+}
+
 const addAbilities = abilities=>{
+  removeChild();
   abilities.forEach(ability=>{
     let item = document.createElement("h4");
     item.classList.add("Info__Item");
