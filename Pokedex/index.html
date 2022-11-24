@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POKEDEX</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form action="" method="GET" class="Form">
+    <label class="Form__Text">PokeName</label>
+    <!-- <select name="property" id="property" disabled="disabled"></select> -->
+    <input class="Form__Input" type="text" placeholder="Buscar" name="pokename">
+    <input class="Form__Button" type="submit" value="Enviar">
+  </form>
+  <div class="Show">
+    <div class="Show__Pokemon">
+      <img class="Pokemon__Sprite" src="">
+    </div>
+    <div class="Show__Info">
+      <h2 class="Info__Name"></h2>
+      <div class="Info__Type"></div>
+      <h3 class="Info__Text">Habilidades:</h3>
+      <div class="Info__Div" id="abilities">
+        <!-- <h4 class="Info__Item">habilidad 1</h4> -->
+        <!-- <h4 class="Info__Item">habilidad 1</h4> -->
+      </div>
+    </div>
+  </div>
+  <script src="https://unpkg.com/pokeapi-js-wrapper/dist/index.js"></script>
+  <script src="pokedex.js"></script>
+</body>
+</html>
